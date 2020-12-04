@@ -3,13 +3,12 @@
 
 
 ```
-协议：
-protobuf自定义协议
-消息总体长度 + 消息id + 消息体(protobuf对象)
+协议：protobuf自定义协议   协议内容：消息总体长度 + 消息id + 消息体(protobuf对象)
+开发工具：eclipse + maven + jdk1.8 + netty4.X + boot2.X
 ```
 ```
 计划：
-基于Netty+TCP+Protobuf实现的游戏后端服务器，包含Protobuf协议序列化、TCP拆包与粘包、长连接握手认证、心跳机制、断线重连机制、消息重发机制、读写超时机制、离线消息、线程池，zook管理session等功能。
+基于springboot+Netty+TCP+Protobuf实现的游戏后端服务器，包含Protobuf协议序列化、TCP拆包与粘包、长连接握手认证、心跳机制、断线重连机制、消息重发机制、读写超时机制、离线消息、线程池，zook管理session等功能。
 ```
 ```
 现有功能:
