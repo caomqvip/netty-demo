@@ -5,7 +5,7 @@
 ```
 协议：
 protobuf自定义协议
-长度+消息id+消息体(protobuf对象)
+消息总体长度 + 消息id + 消息体(protobuf对象)
 ```
 ```
 计划：
