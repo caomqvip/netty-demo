@@ -3,7 +3,8 @@
 
 
 ```
-协议：protobuf自定义协议   协议内容：消息总体长度 + 消息id + 消息体(protobuf对象)
+协议：google protobuf   
+数据传输格式：消息总体长度 + 消息id + 消息体(protobuf对象)
 开发工具：eclipse + maven + jdk1.8 + netty4.X + boot2.X
 ```
 ```
