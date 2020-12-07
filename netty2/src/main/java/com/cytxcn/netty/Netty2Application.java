@@ -11,7 +11,7 @@ import com.cytxcn.netty.server.ProtocolServer;
 public class Netty2Application implements CommandLineRunner {
 
 	@Autowired
-	private ProtocolServer nettyServer;
+	private ProtocolServer nettyServer; 
 
 	
 	public static void main(String[] args) {
