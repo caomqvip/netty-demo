@@ -9,6 +9,7 @@ springboot + netty 非阻塞NIO模型
 ```
 ```
 启动方式 -->正常springboot启动
+注意事项：客户端对接C#，解码器与编码器中做了int类型的大小端字节转换 java客户端测试请自行删除
 ```
 ```
 开发任务：
@@ -17,6 +18,9 @@ springboot + netty 非阻塞NIO模型
 ```
 ```
 现有功能:
-netty 服务器启动， Protobuf协议序列化，自定义编码解码，seesion创建与管理，对应消息处理，通过spring事件机制异步推送消息
-尚未成功，仍需努力 
+netty 服务器启动， Protobuf协议序列化，自定义编码解码，seesion创建与管理，对应消息处理，通过spring事件机制异步推送消息，session的创
+建与销毁
+```
+```
+尚未成功，太难了！！！
 ```
