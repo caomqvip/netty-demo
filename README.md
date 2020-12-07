@@ -1,5 +1,5 @@
 # netty-demo
-springboot + netty
+springboot + netty 非阻塞NIO模型
 
 
 ```
