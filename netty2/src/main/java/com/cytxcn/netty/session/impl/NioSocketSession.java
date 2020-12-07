@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.cytxcn.netty.session.ISession;
 
-@Service
 public class NioSocketSession implements ISession {
     private final int connId;
     private int userId;

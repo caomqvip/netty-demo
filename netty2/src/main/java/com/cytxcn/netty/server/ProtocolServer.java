@@ -39,7 +39,6 @@ public class ProtocolServer {
 		this.port = port;
 	}
 
-	 @PostConstruct
 	 public void run() throws Exception {
 	        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
 	        EventLoopGroup workerGroup = new NioEventLoopGroup();
@@ -54,13 +53,9 @@ public class ProtocolServer {
 	            // 绑定端口，开始接收进来的连接
 	            ChannelFuture f = b.bind(port).sync(); // (7)
 	            
-	    		System.out.println("Server start listen at " + port );
-	    		
+	    		System.err.println("Server start listen at " + port );
 	            // 等待服务器  socket 关闭 。
-	            // 在这个例子中，这不会发生，但你可以优雅地关闭你的服务器。
 	            f.channel().closeFuture().sync();
-	            
-
 	        } finally {
 	            workerGroup.shutdownGracefully();
 	            bossGroup.shutdownGracefully();

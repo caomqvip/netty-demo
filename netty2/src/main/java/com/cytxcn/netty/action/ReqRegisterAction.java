@@ -39,22 +39,4 @@ public class ReqRegisterAction extends AbstractBaseMessageAction<ClientMsgInfo.R
 	}
 
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public ReqRegisterAction(ISessionService sessionService) {
-		super();
-		this.sessionService = sessionService;
-	}
-
-	public ReqRegisterAction() {
-		super();
-	}
 }

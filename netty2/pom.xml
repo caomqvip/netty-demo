@@ -6,13 +6,13 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cytxcn</groupId>
-	<artifactId>netty</artifactId>
+	<artifactId>netty2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>netty</name>
-	<description>Netty project for Spring Boot</description>
+	<name>netty2</name>
+	<description>Netty2 project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -21,41 +21,37 @@
 	</properties>
 
 	<dependencies>
+		<!-- springboot 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<!-- netty 依赖 -->
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
 			<version>${netty-all.version}</version>
 		</dependency>
-		
-		<dependency>
-		    <groupId>com.google.protobuf</groupId>
-		    <artifactId>protobuf-java</artifactId>
-		    <version>4.0.0-rc-1</version>
-		</dependency>
-		
-		 <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-        </dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		
-		
-		<dependency>  
-		    <groupId>com.alibaba</groupId>  
-		    <artifactId>fastjson</artifactId>  
-		    <version>1.2.47</version>  
-		</dependency> 
-	</dependencies>
 
+		<!-- protobuf协议 依赖 -->
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>4.0.0-rc-1</version>
+		</dependency>
+
+		<!-- lombok日志 依赖 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+		</dependency>
+
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>

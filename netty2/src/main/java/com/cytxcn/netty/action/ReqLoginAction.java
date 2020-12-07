@@ -47,15 +47,9 @@ public class ReqLoginAction extends AbstractBaseMessageAction<ClientMsgInfo.ReqL
 			sessionService.sendMsg(connId, user.toByteArray());
 			Thread.sleep(100);
 		}
-		try {
-			StudentEvent studentEvent = new StudentEvent("cc",18, 1);
-			context.publishEvent(studentEvent);
-			
-		} catch (Exception e) {
 		
-		}
-		
-		
+		StudentEvent studentEvent = new StudentEvent("cc",18, 1);
+		context.publishEvent(studentEvent);
 	}
 
 	@Override

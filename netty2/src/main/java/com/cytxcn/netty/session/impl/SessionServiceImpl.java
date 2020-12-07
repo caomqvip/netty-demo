@@ -152,9 +152,7 @@ public class SessionServiceImpl implements ISessionService {
 	@Override
 	public <T> void messageReceived(ChannelHandlerContext ctx, ProtocolMsg msg,int msgId) {
 		try {
-			IMessageAction iMessageAction = (IMessageAction) getAction(msgId);
 			MsgID forNumber = ClientMsgInfo.MsgID.forNumber(msgId);
-			
 			IMessageAction iMessageAction2 = messageActionMap.get(forNumber.toString());
 			iMessageAction2.processMessage(ctx,msg.getBody());
 		} catch (Exception e) {
@@ -162,21 +160,4 @@ public class SessionServiceImpl implements ISessionService {
 		}
 	}
 	
-	private Object getAction(int msgId) throws InvalidProtocolBufferException{
-		switch (msgId) {
-			case 8293:
-				//return ClientMsgInfo.Handshake.parseFrom(data);
-			case 8294:
-//				return ClientMsgInfo.PlayerInfo.parseFrom(data);
-			case 8295:
-				return new ReqLoginAction(sessionService);
-			case 8296:
-				return new ReqRegisterAction(sessionService);
-			case 8297:
-//				return ClientMsgInfo.RetRegister.parseFrom(data);
-			case 8298:
-//				return ClientMsgInfo.RetLogin.parseFrom(data);
-			}
-		return null;
-    }
 }
