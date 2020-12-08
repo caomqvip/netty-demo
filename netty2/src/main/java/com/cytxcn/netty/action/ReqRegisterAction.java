@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.cytxcn.netty.action.base.AbstractBaseMessageAction;
-import com.cytxcn.netty.protocol.ClientMsgInfo;
-import com.cytxcn.netty.protocol.ClientMsgInfo.ReqRegister;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo.ReqRegister;
 import com.cytxcn.netty.session.ISession;
 import com.cytxcn.netty.session.ISessionService;
 

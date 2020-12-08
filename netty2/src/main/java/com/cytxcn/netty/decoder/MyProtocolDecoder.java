@@ -7,12 +7,12 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
-import com.cytxcn.netty.protocol.ClientMsgInfo;
-import com.cytxcn.netty.protocol.ClientMsgInfo.MsgID;
-import com.cytxcn.netty.protocol.ProtocolHeader;
-import com.cytxcn.netty.protocol.ProtocolMsg;
 import com.google.protobuf.Descriptors.Descriptor;
 import com.google.protobuf.Descriptors.FileDescriptor;
+import com.cytxcn.netty.messages.ProtocolHeader;
+import com.cytxcn.netty.messages.ProtocolMsg;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo.MsgID;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 import io.netty.buffer.ByteBuf;

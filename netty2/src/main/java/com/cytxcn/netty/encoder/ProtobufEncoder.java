@@ -3,7 +3,7 @@ package com.cytxcn.netty.encoder;
 
 import org.springframework.stereotype.Component;
 
-import com.cytxcn.netty.protocol.ClientMsgInfo;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo;
 import com.cytxcn.netty.util.NetworkUtil;
 
 import io.netty.buffer.ByteBuf;

@@ -5,7 +5,7 @@ package com.cytxcn.netty.server;
 
 
 
-import com.cytxcn.netty.protocol.ProtocolMsg;
+import com.cytxcn.netty.messages.ProtocolMsg;
 import com.cytxcn.netty.session.ISessionService;
 
 import io.netty.channel.Channel;

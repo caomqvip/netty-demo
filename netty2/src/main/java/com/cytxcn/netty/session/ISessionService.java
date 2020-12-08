@@ -2,7 +2,7 @@ package com.cytxcn.netty.session;
 
 import java.util.Collection;
 
-import com.cytxcn.netty.protocol.ProtocolMsg;
+import com.cytxcn.netty.messages.ProtocolMsg;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

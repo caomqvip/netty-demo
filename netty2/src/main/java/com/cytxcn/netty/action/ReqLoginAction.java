@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 import com.cytxcn.netty.action.base.AbstractBaseMessageAction;
 import com.cytxcn.netty.event.StudentEvent;
 import com.cytxcn.netty.eventService.StudentService;
-import com.cytxcn.netty.protocol.ClientMsgInfo;
-import com.cytxcn.netty.protocol.ClientMsgInfo.ReqLogin;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo.ReqLogin;
 import com.cytxcn.netty.session.ISession;
 import com.cytxcn.netty.session.ISessionService;
 

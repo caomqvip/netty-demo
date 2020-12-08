@@ -1,4 +1,4 @@
-package com.cytxcn.netty.protocol;
+package com.cytxcn.netty.messages;
  
 
 /**

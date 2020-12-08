@@ -18,8 +18,7 @@ public class SecurityApplicationTests implements ApplicationContextAware {
 
 	
 	@Test
-	  public void listener() {
+	public void listener() {
 		
-	    //context.publishEvent();
-	  }
+	}
 }

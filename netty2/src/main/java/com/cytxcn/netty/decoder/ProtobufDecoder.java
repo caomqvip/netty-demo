@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.cytxcn.netty.protocol.ClientMsgInfo;
+import com.cytxcn.netty.messages.protobuf.ClientMsgInfo;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
